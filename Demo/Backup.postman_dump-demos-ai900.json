@@ -1,0 +1,820 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+			"name": "Vision-Demo-Collectio",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"7de6d621-dd13-44ef-9edd-e0dfa4ffaf15",
+				"0623646f-0af8-4776-a911-184a11b1ceb9",
+				"621e896c-3ec5-4d75-9c8b-2b0161f26d82",
+				"ab885bc7-18a5-4f1e-8fb2-87e23d69e9fa",
+				"4939cd53-833f-4861-921b-c283f553f3d8",
+				"98491f94-878d-40db-a06d-cd606d5ec28c",
+				"6730a497-0304-46cc-a862-93738a238080",
+				"4ebf446e-052a-41fd-83a5-391b04a44eab",
+				"151e3171-5c38-4087-bfd1-75db4475f8bb",
+				"6aabce4d-4858-4b1f-a506-a83666b00bf4",
+				"0992990c-632e-4b98-8839-86aacf185c88",
+				"df0863da-0563-43bd-a1c2-dbe1698bcdbc",
+				"bfa6c0c6-591f-46bc-961e-fe567eeeeb2c",
+				"278aaa28-34ac-4dd3-9e78-01698135ca27",
+				"9179e833-db04-469a-a840-0b7858402335",
+				"695f024f-f1e2-4e78-8a24-715c05c2f8d3",
+				"151d3166-af7a-49f8-a9f9-3d4d2a7b67f4"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"folders": [],
+			"requests": [
+				{
+					"id": "0623646f-0af8-4776-a911-184a11b1ceb9",
+					"name": "https://eastus.api.cognitive.microsoft.com/vision/v2.0/analyze?visualFeatures=Categories,Description,Faces,Objects,Tags&details=Celebrities,Landmarks&language=en",
+					"url": "https://eastus.api.cognitive.microsoft.com/vision/v2.0/analyze?visualFeatures=Categories,Description,Faces,Objects,Tags&details=Celebrities,Landmarks&language=en",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "binary",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/x-www-form-urlencoded",
+							"description": "Content type for the image",
+							"type": "text"
+						},
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "Key for east-us",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "visualFeatures",
+							"value": "Categories,Description,Faces,Objects,Tags",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "details",
+							"value": "Celebrities,Landmarks",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "language",
+							"value": "en",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"rawModeData": "",
+					"headers": "Content-Type: application/x-www-form-urlencoded\nOcp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "0992990c-632e-4b98-8839-86aacf185c88",
+					"name": "Text Analytics - Key Phrases",
+					"url": "https://eastus.api.cognitive.microsoft.com/text/analytics/v2.1/keyPhrases",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"rawModeData": "{\r\n  \"documents\": [\r\n    {\r\n      \"language\": \"en\",\r\n      \"id\": \"1\",\r\n      \"text\": \"O'Reilly Media (formerly O'Reilly & Associates) is a learning company established by Tim O'Reilly that publishes books, produces tech conferences, and provides an online learning platform.\"\r\n    },\r\n    {\r\n      \"language\": \"fr\",\r\n      \"id\": \"2\",\r\n      \"text\": \"Bonjour tout le monde\"\r\n    }\r\n  ]\r\n}",
+					"headers": "Content-Type: application/json\nOcp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "151d3166-af7a-49f8-a9f9-3d4d2a7b67f4",
+					"name": "Spell Check",
+					"url": "https://eastus.api.cognitive.microsoft.com/bing/v7.0/spellcheck",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/x-www-form-urlencoded",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"rawModeData": "Text=Bill+Gatas",
+					"headers": "Ocp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\nContent-Type: application/x-www-form-urlencoded\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "151e3171-5c38-4087-bfd1-75db4475f8bb",
+					"name": "Speech to Text",
+					"url": "https://eastus.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "binary",
+					"headerData": [
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "Content-type",
+							"value": "audio/wav",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "language",
+							"value": "en-US",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"rawModeData": "/C:/Users/Reza/Google Drive/02-O'Reilly/01-Getting Started with Azure Cognitive Services/05-Demo-Material/Speech/Sample_speech.wav",
+					"headers": "Ocp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\nContent-type: audio/wav\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "278aaa28-34ac-4dd3-9e78-01698135ca27",
+					"name": "Web Search",
+					"url": "https://eastus.api.cognitive.microsoft.com/bing/v7.0/search?q=cognitive%20services&count=10",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "q",
+							"value": "cognitive%20services",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "count",
+							"value": "10",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"headers": "Ocp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "4939cd53-833f-4861-921b-c283f553f3d8",
+					"name": "Image Moderation",
+					"url": "https://eastus.api.cognitive.microsoft.com/contentmoderator/moderate/v1.0/ProcessImage/OCR?enhanced=true&language=eng",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "binary",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "image/jpeg",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "enhanced",
+							"value": "true",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "language",
+							"value": "eng",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"rawModeData": "/C:/Users/Reza/Google Drive/02-O'Reilly/01-Getting Started with Azure Cognitive Services/05-Demo-Material/Decision/moderation.jpg",
+					"headers": "Content-Type: image/jpeg\nOcp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "4ebf446e-052a-41fd-83a5-391b04a44eab",
+					"name": "Text to Speech",
+					"url": "https://eastus.tts.speech.microsoft.com/cognitiveservices/v1",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46bXMuY29nbml0aXZlc2VydmljZXMiLCJleHAiOiIxNTcwNDcyNzEzIiwicmVnaW9uIjoiZWFzdHVzIiwic3Vic2NyaXB0aW9uLWlkIjoiYTMxYjI0ZWNmZDFjNGMzNDljZDVmOGZiNzZjNDQ5ZWMiLCJwcm9kdWN0LWlkIjoiQ29nbml0aXZlU2VydmljZXMuUzAiLCJjb2duaXRpdmUtc2VydmljZXMtZW5kcG9pbnQiOiJodHRwczovL2FwaS5jb2duaXRpdmUubWljcm9zb2Z0LmNvbS9pbnRlcm5hbC92MS4wLyIsImF6dXJlLXJlc291cmNlLWlkIjoiL3N1YnNjcmlwdGlvbnMvMTk5NjljODEtZThmZi00NTg1LThjMmYtM2YxOTZiNTg4MjI3L3Jlc291cmNlR3JvdXBzL29seS1jb2duaXRpdmUtc2VydmljZXMvcHJvdmlkZXJzL01pY3Jvc29mdC5Db2duaXRpdmVTZXJ2aWNlcy9hY2NvdW50cy9jb2ctZGVtbzAxIiwic2NvcGUiOlsic3BlZWNodG9pbnRlbnRzIiwiaHR0cHM6Ly9hcGkubWljcm9zb2Z0dHJhbnNsYXRvci5jb20vIiwic3BlZWNoc2VydmljZXMiXSwiYXVkIjpbInVybjptcy5zcGVlY2giLCJ1cm46bXMubHVpcy5lYXN0dXMiLCJ1cm46bXMubWljcm9zb2Z0dHJhbnNsYXRvciIsInVybjptcy5zcGVlY2hzZXJ2aWNlcy5lYXN0dXMiXX0.hTUT0zb1YNETIUZcbUuuvKDkii4tBJdVfnrgptl7vl8",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/ssml+xml",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "X-Microsoft-OutputFormat",
+							"value": "audio-16khz-128kbitrate-mono-mp3",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"enabled": false
+						}
+					],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"rawModeData": "<speak version='1.0' xml:lang='en-US'><voice xml:lang='en-US' xml:gender='Female'\r\n    name='en-US-JessaRUS'>\r\n        We are learning about Microsoft Azure Cognitive Services with OReilly media!\r\n</voice></speak>",
+					"headers": "Authorization: Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46bXMuY29nbml0aXZlc2VydmljZXMiLCJleHAiOiIxNTcwNDcyNzEzIiwicmVnaW9uIjoiZWFzdHVzIiwic3Vic2NyaXB0aW9uLWlkIjoiYTMxYjI0ZWNmZDFjNGMzNDljZDVmOGZiNzZjNDQ5ZWMiLCJwcm9kdWN0LWlkIjoiQ29nbml0aXZlU2VydmljZXMuUzAiLCJjb2duaXRpdmUtc2VydmljZXMtZW5kcG9pbnQiOiJodHRwczovL2FwaS5jb2duaXRpdmUubWljcm9zb2Z0LmNvbS9pbnRlcm5hbC92MS4wLyIsImF6dXJlLXJlc291cmNlLWlkIjoiL3N1YnNjcmlwdGlvbnMvMTk5NjljODEtZThmZi00NTg1LThjMmYtM2YxOTZiNTg4MjI3L3Jlc291cmNlR3JvdXBzL29seS1jb2duaXRpdmUtc2VydmljZXMvcHJvdmlkZXJzL01pY3Jvc29mdC5Db2duaXRpdmVTZXJ2aWNlcy9hY2NvdW50cy9jb2ctZGVtbzAxIiwic2NvcGUiOlsic3BlZWNodG9pbnRlbnRzIiwiaHR0cHM6Ly9hcGkubWljcm9zb2Z0dHJhbnNsYXRvci5jb20vIiwic3BlZWNoc2VydmljZXMiXSwiYXVkIjpbInVybjptcy5zcGVlY2giLCJ1cm46bXMubHVpcy5lYXN0dXMiLCJ1cm46bXMubWljcm9zb2Z0dHJhbnNsYXRvciIsInVybjptcy5zcGVlY2hzZXJ2aWNlcy5lYXN0dXMiXX0.hTUT0zb1YNETIUZcbUuuvKDkii4tBJdVfnrgptl7vl8\nContent-Type: application/ssml+xml\nX-Microsoft-OutputFormat: audio-16khz-128kbitrate-mono-mp3\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "621e896c-3ec5-4d75-9c8b-2b0161f26d82",
+					"name": "Face",
+					"url": "https://eastus.api.cognitive.microsoft.com/face/v1.0/detect?returnFaceLandmarks=true&returnFaceAttributes=age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "binary",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/octet-stream",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "returnFaceLandmarks",
+							"value": "true",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "returnFaceAttributes",
+							"value": "age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"rawModeData": "/C:/Users/Reza/Google Drive/02-O'Reilly/01-Getting Started with Azure Cognitive Services/05-Demo-Material/Vision/Satya.jpg",
+					"headers": "Content-Type: application/octet-stream\nOcp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "6730a497-0304-46cc-a862-93738a238080",
+					"name": "List Voices",
+					"url": "https://eastus.tts.speech.microsoft.com/cognitiveservices/voices/list",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46bXMuY29nbml0aXZlc2VydmljZXMiLCJleHAiOiIxNTcwNDcxOTIxIiwicmVnaW9uIjoiZWFzdHVzIiwic3Vic2NyaXB0aW9uLWlkIjoiYTMxYjI0ZWNmZDFjNGMzNDljZDVmOGZiNzZjNDQ5ZWMiLCJwcm9kdWN0LWlkIjoiQ29nbml0aXZlU2VydmljZXMuUzAiLCJjb2duaXRpdmUtc2VydmljZXMtZW5kcG9pbnQiOiJodHRwczovL2FwaS5jb2duaXRpdmUubWljcm9zb2Z0LmNvbS9pbnRlcm5hbC92MS4wLyIsImF6dXJlLXJlc291cmNlLWlkIjoiL3N1YnNjcmlwdGlvbnMvMTk5NjljODEtZThmZi00NTg1LThjMmYtM2YxOTZiNTg4MjI3L3Jlc291cmNlR3JvdXBzL29seS1jb2duaXRpdmUtc2VydmljZXMvcHJvdmlkZXJzL01pY3Jvc29mdC5Db2duaXRpdmVTZXJ2aWNlcy9hY2NvdW50cy9jb2ctZGVtbzAxIiwic2NvcGUiOlsic3BlZWNodG9pbnRlbnRzIiwiaHR0cHM6Ly9hcGkubWljcm9zb2Z0dHJhbnNsYXRvci5jb20vIiwic3BlZWNoc2VydmljZXMiXSwiYXVkIjpbInVybjptcy5zcGVlY2giLCJ1cm46bXMubHVpcy5lYXN0dXMiLCJ1cm46bXMubWljcm9zb2Z0dHJhbnNsYXRvciIsInVybjptcy5zcGVlY2hzZXJ2aWNlcy5lYXN0dXMiXX0.jj8l3ypXFZkdRibG3dB8G4Row0GKUqiavapGt7ckHm8",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"headers": "Authorization: Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46bXMuY29nbml0aXZlc2VydmljZXMiLCJleHAiOiIxNTcwNDcxOTIxIiwicmVnaW9uIjoiZWFzdHVzIiwic3Vic2NyaXB0aW9uLWlkIjoiYTMxYjI0ZWNmZDFjNGMzNDljZDVmOGZiNzZjNDQ5ZWMiLCJwcm9kdWN0LWlkIjoiQ29nbml0aXZlU2VydmljZXMuUzAiLCJjb2duaXRpdmUtc2VydmljZXMtZW5kcG9pbnQiOiJodHRwczovL2FwaS5jb2duaXRpdmUubWljcm9zb2Z0LmNvbS9pbnRlcm5hbC92MS4wLyIsImF6dXJlLXJlc291cmNlLWlkIjoiL3N1YnNjcmlwdGlvbnMvMTk5NjljODEtZThmZi00NTg1LThjMmYtM2YxOTZiNTg4MjI3L3Jlc291cmNlR3JvdXBzL29seS1jb2duaXRpdmUtc2VydmljZXMvcHJvdmlkZXJzL01pY3Jvc29mdC5Db2duaXRpdmVTZXJ2aWNlcy9hY2NvdW50cy9jb2ctZGVtbzAxIiwic2NvcGUiOlsic3BlZWNodG9pbnRlbnRzIiwiaHR0cHM6Ly9hcGkubWljcm9zb2Z0dHJhbnNsYXRvci5jb20vIiwic3BlZWNoc2VydmljZXMiXSwiYXVkIjpbInVybjptcy5zcGVlY2giLCJ1cm46bXMubHVpcy5lYXN0dXMiLCJ1cm46bXMubWljcm9zb2Z0dHJhbnNsYXRvciIsInVybjptcy5zcGVlY2hzZXJ2aWNlcy5lYXN0dXMiXX0.jj8l3ypXFZkdRibG3dB8G4Row0GKUqiavapGt7ckHm8\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "695f024f-f1e2-4e78-8a24-715c05c2f8d3",
+					"name": "Image Search",
+					"url": "https://eastus.api.cognitive.microsoft.com/bing/v7.0/images/search?q=pyramids&count=10",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "q",
+							"value": "pyramids",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "count",
+							"value": "10",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"headers": "Ocp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "6aabce4d-4858-4b1f-a506-a83666b00bf4",
+					"name": "Text Analytics - Entities",
+					"url": "https://eastus.api.cognitive.microsoft.com/text/analytics/v2.1/entities",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"rawModeData": "{\r\n  \"documents\": [\r\n    {\r\n      \"language\": \"en\",\r\n      \"id\": \"1\",\r\n      \"text\": \"London is the capital and largest city of England and the United Kingdom.\"\r\n    }\r\n  ]\r\n}",
+					"headers": "Content-Type: application/json\nOcp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "7de6d621-dd13-44ef-9edd-e0dfa4ffaf15",
+					"name": "Analyze Image",
+					"url": "https://eastus.api.cognitive.microsoft.com/vision/v2.0/analyze?visualFeatures=Categories,Description,Faces,Objects,Tags&details=Celebrities,Landmarks&language=en",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "binary",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/octet-stream",
+							"description": "Content type for the image",
+							"type": "text"
+						},
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "Key for east-us",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "visualFeatures",
+							"value": "Categories,Description,Faces,Objects,Tags",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "details",
+							"value": "Celebrities,Landmarks",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "language",
+							"value": "en",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"rawModeData": "/C:/Users/Reza/Google Drive/02-O'Reilly/01-Getting Started with Azure Cognitive Services/05-Demo-Material/Vision/faces.jpg",
+					"headers": "Content-Type: application/octet-stream\nOcp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "9179e833-db04-469a-a840-0b7858402335",
+					"name": "Autosuggest",
+					"url": "https://eastus.api.cognitive.microsoft.com/bing/v7.0/suggestions?q=bill",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "q",
+							"value": "bill",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"headers": "Ocp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "98491f94-878d-40db-a06d-cd606d5ec28c",
+					"name": "Get Bearer Token",
+					"url": "https://eastus.api.cognitive.microsoft.com/sts/v1.0/issueToken",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"headers": "Ocp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "ab885bc7-18a5-4f1e-8fb2-87e23d69e9fa",
+					"name": "Text Moderation",
+					"url": "https://eastus.api.cognitive.microsoft.com/contentmoderator/moderate/v1.0/ProcessText/Screen?autocorrect=true&PII=true&classify=true",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "autocorrect",
+							"value": "true",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "PII",
+							"value": "true",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "classify",
+							"value": "true",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"rawModeData": "This is a crap email address abcd@ghi@b.com , your ip address is 192.168.0.1 and your name is John Smith with SSN of 417-30-8365",
+					"headers": "Content-Type: text/plain\nOcp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "bfa6c0c6-591f-46bc-961e-fe567eeeeb2c",
+					"name": "Translate",
+					"url": "https://api-nam.cognitive.microsofttranslator.com/translate?api-version=3.0&from=en&to=fr",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "Ocp-Apim-Subscription-Region",
+							"value": "eastus",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "api-version",
+							"value": "3.0",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "from",
+							"value": "en",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						},
+						{
+							"key": "to",
+							"value": "fr",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"rawModeData": "[\r\n    {\"Text\":\"I would really like to drive your car around the block a few times.\"}\r\n]",
+					"headers": "Content-Type: application/json\nOcp-Apim-Subscription-Region: eastus\nOcp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "df0863da-0563-43bd-a1c2-dbe1698bcdbc",
+					"name": "Text Analytics - Sentiment",
+					"url": "https://eastus.api.cognitive.microsoft.com/text/analytics/v2.1/sentiment",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "Ocp-Apim-Subscription-Key",
+							"value": "dcdb4f7dd7fc443ca9feb7c268305b22",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "0fc74ce9-46e8-4be6-8ad3-8a715506f4ae",
+					"rawModeData": "{\r\n  \"documents\": [\r\n    {\r\n      \"language\": \"en\",\r\n      \"id\": \"1\",\r\n      \"text\": \"Hello. I love Azure Cognitive services! It offers many useful features.\"\r\n    }\r\n  ]\r\n}",
+					"headers": "Content-Type: application/json\nOcp-Apim-Subscription-Key: dcdb4f7dd7fc443ca9feb7c268305b22\n",
+					"pathVariables": {}
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "95ae47aa-638c-4cd6-9ed0-32da3b16e301",
+			"name": "My Workspace - globals",
+			"values": []
+		}
+	],
+	"headerPresets": [],
+	"globals": []
+}
