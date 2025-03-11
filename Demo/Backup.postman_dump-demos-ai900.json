@@ -20,7 +20,7 @@
 					},
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "6595f539163c45c88c9e53d86a125cd2",
+						"value": "BCA43EvBO6dZcLXEPhHGV2rJzp9oQdh9upBSpG17L0fcmWJyrIFBJQQJ99BCACYeBjFXJ3w3AAAFACOGyE6T",
 						"description": "Key for east-us",
 						"type": "text"
 					}
@@ -28,14 +28,14 @@
 				"body": {
 					"mode": "file",
 					"file": {
-						"src": "/C:/Data/Repo/oreilly-ai-900/Demo/Vision/Custom/maple/Japanese/japanese-maple08.jpg"
+						"src": "/C:/Data/Repo/oreilly-ai-900/Demo/Vision/Custom/maple/-02sugar-maple-test.jpg"
 					}
 				},
 				"url": {
-					"raw": "https://ai900orvision.cognitiveservices.azure.com/vision/v3.2/analyze?visualFeatures=Description",
+					"raw": "https://ai900oraivision.cognitiveservices.azure.com/vision/v3.2/analyze?visualFeatures=Description",
 					"protocol": "https",
 					"host": [
-						"ai900orvision",
+						"ai900oraivision",
 						"cognitiveservices",
 						"azure",
 						"com"
@@ -69,7 +69,7 @@
 					},
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "6595f539163c45c88c9e53d86a125cd2",
+						"value": "BCA43EvBO6dZcLXEPhHGV2rJzp9oQdh9upBSpG17L0fcmWJyrIFBJQQJ99BCACYeBjFXJ3w3AAAFACOGyE6T",
 						"description": "Key for east-us",
 						"type": "text"
 					}
@@ -81,10 +81,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://ai900orvision.cognitiveservices.azure.com/vision/v3.2/ocr?language=en",
+					"raw": "https://ai900oraivision.cognitiveservices.azure.com/vision/v3.2/ocr?language=en",
 					"protocol": "https",
 					"host": [
-						"ai900orvision",
+						"ai900oraivision",
 						"cognitiveservices",
 						"azure",
 						"com"
@@ -116,7 +116,7 @@
 					},
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "56026069cfb14111ab44a3efcfe716a3",
+						"value": "BhiZSBFw4fhsIQWy83n8U0XYYbcc26Sh5MJKv7XYQCPp9Mx63NlfJQQJ99BCACYeBjFXJ3w3AAAKACOGt2TC",
 						"type": "text"
 					}
 				],
@@ -165,7 +165,7 @@
 				"header": [
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "56cfecfc401e499994c5b5a3debff63b",
+						"value": "5OgFIzryUI1yyz9zrXxqea1sFGAsh1n9RqJ5bQv2XB9GEfanxnHTJQQJ99BCACYeBjFXJ3w3AAAHACOGMah5",
 						"type": "text"
 					}
 				],
@@ -179,10 +179,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://ai900orsafety.cognitiveservices.azure.com/contentsafety/text:analyze?api-version=2023-10-01",
+					"raw": "https://ai900orcontentsafety.cognitiveservices.azure.com/contentsafety/text:analyze?api-version=2023-10-01",
 					"protocol": "https",
 					"host": [
-						"ai900orsafety",
+						"ai900orcontentsafety",
 						"cognitiveservices",
 						"azure",
 						"com"
@@ -208,7 +208,7 @@
 				"header": [
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "56cfecfc401e499994c5b5a3debff63b",
+						"value": "5OgFIzryUI1yyz9zrXxqea1sFGAsh1n9RqJ5bQv2XB9GEfanxnHTJQQJ99BCACYeBjFXJ3w3AAAHACOGMah5",
 						"type": "text"
 					}
 				],
@@ -222,10 +222,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://ai900orsafety.cognitiveservices.azure.com/contentsafety/image:analyze?api-version=2023-10-01",
+					"raw": "https://ai900orcontentsafety.cognitiveservices.azure.com/contentsafety/image:analyze?api-version=2023-10-01",
 					"protocol": "https",
 					"host": [
-						"ai900orsafety",
+						"ai900orcontentsafety",
 						"cognitiveservices",
 						"azure",
 						"com"
@@ -251,15 +251,15 @@
 				"header": [
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "c20e2332347c4a468ba592141ec4b94d",
+						"value": "1ShYJfgY8uKhYVxiu9WCVyO8lTKKGKWYSk89kJsTnrlv0jvHgru3JQQJ99BCACYeBjFXJ3w3AAAYACOGSLRW",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "https://canadacentral.api.cognitive.microsoft.com/sts/v1.0/issueToken",
+					"raw": "https://eastus.api.cognitive.microsoft.com/sts/v1.0/issueToken",
 					"protocol": "https",
 					"host": [
-						"canadacentral",
+						"eastus",
 						"api",
 						"cognitive",
 						"microsoft",
@@ -311,7 +311,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImtleTEiLCJ0eXAiOiJKV1QifQ.eyJyZWdpb24iOiJjYW5hZGFjZW50cmFsIiwic3Vic2NyaXB0aW9uLWlkIjoiY2E0YzEyY2MyNmZlNDZiYmJiMzcyYWQ5ZDYyMzM2YmQiLCJwcm9kdWN0LWlkIjoiU3BlZWNoU2VydmljZXMuUzAiLCJjb2duaXRpdmUtc2VydmljZXMtZW5kcG9pbnQiOiJodHRwczovL2FwaS5jb2duaXRpdmUubWljcm9zb2Z0LmNvbS9pbnRlcm5hbC92MS4wLyIsImF6dXJlLXJlc291cmNlLWlkIjoiL3N1YnNjcmlwdGlvbnMvMTk5NjljODEtZThmZi00NTg1LThjMmYtM2YxOTZiNTg4MjI3L3Jlc291cmNlR3JvdXBzL0FJOTAwLVJHL3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29nbml0aXZlU2VydmljZXMvYWNjb3VudHMvYWk5MDBvclNwZWVjaCIsInNjb3BlIjoic3BlZWNoc2VydmljZXMiLCJhdWQiOiJ1cm46bXMuc3BlZWNoc2VydmljZXMuY2FuYWRhY2VudHJhbCIsImV4cCI6MTcyODA2MDE3NCwiaXNzIjoidXJuOm1zLmNvZ25pdGl2ZXNlcnZpY2VzIn0.pcTIBmn_yGPA8wbK3GZSJEwTAMkLHcgIgLapIw5JB3eXj6SzwEmYCmcPisBl-8-sC73WCHCSTiPKv43uZArvew",
+						"value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImtleTEiLCJ0eXAiOiJKV1QifQ.eyJyZWdpb24iOiJlYXN0dXMiLCJzdWJzY3JpcHRpb24taWQiOiJhMDVkMGI2Nzk2OTM0OGJlOWZlZDkyYjI0NWU5M2M4NyIsInByb2R1Y3QtaWQiOiJTcGVlY2hTZXJ2aWNlcy5GMCIsImNvZ25pdGl2ZS1zZXJ2aWNlcy1lbmRwb2ludCI6Imh0dHBzOi8vYXBpLmNvZ25pdGl2ZS5taWNyb3NvZnQuY29tL2ludGVybmFsL3YxLjAvIiwiYXp1cmUtcmVzb3VyY2UtaWQiOiIvc3Vic2NyaXB0aW9ucy8xOTk2OWM4MS1lOGZmLTQ1ODUtOGMyZi0zZjE5NmI1ODgyMjcvcmVzb3VyY2VHcm91cHMvYWk5MDAtUkcvcHJvdmlkZXJzL01pY3Jvc29mdC5Db2duaXRpdmVTZXJ2aWNlcy9hY2NvdW50cy9haTkwMG9yU3BlZWNoQUkiLCJzY29wZSI6InNwZWVjaHNlcnZpY2VzIiwiYXVkIjoidXJuOm1zLnNwZWVjaHNlcnZpY2VzLmVhc3R1cyIsImV4cCI6MTc0MTcxNzMzOSwiaXNzIjoidXJuOm1zLmNvZ25pdGl2ZXNlcnZpY2VzIn0.TyphnpS3OL33Eg9R162xoziixEaBNJ1gt5zuatcN9nsN404mltLG6vEFXuRVvRjlXWVlGMSYI26WwSB6cHqepA",
 						"type": "text"
 					},
 					{
@@ -327,13 +327,13 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "<speak version='1.0' xml:lang='en-US'><voice xml:lang='en-US' xml:gender='Female' name='en-IE-EmilyNeural'>\r\n        We are learning about Microsoft Azure AI Services with OReilly!\r\n</voice></speak>"
+					"raw": "<speak version='1.0' xml:lang='en-US'><voice xml:lang='en-US' xml:gender='Female' name='en-IE-EmilyNeural'>\r\n        We are learning about Microsoft Azure AI Services with OReilly in March 2025!\r\n</voice></speak>"
 				},
 				"url": {
-					"raw": "https://canadacentral.tts.speech.microsoft.com/cognitiveservices/v1",
+					"raw": "https://eastus.tts.speech.microsoft.com/cognitiveservices/v1",
 					"protocol": "https",
 					"host": [
-						"canadacentral",
+						"eastus",
 						"tts",
 						"speech",
 						"microsoft",
@@ -361,7 +361,7 @@
 				"header": [
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "c20e2332347c4a468ba592141ec4b94d",
+						"value": "1ShYJfgY8uKhYVxiu9WCVyO8lTKKGKWYSk89kJsTnrlv0jvHgru3JQQJ99BCACYeBjFXJ3w3AAAYACOGSLRW",
 						"type": "text"
 					},
 					{
@@ -377,10 +377,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://canadacentral.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US",
+					"raw": "https://eastus.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US",
 					"protocol": "https",
 					"host": [
-						"canadacentral",
+						"eastus",
 						"stt",
 						"speech",
 						"microsoft",
@@ -415,7 +415,7 @@
 					},
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "4eadca5dfe534a3eb6d36d2268daa3d0",
+						"value": "SOd1YasHM5hYQZU5aK6yAANw07VT1djHjfAMltkxxS4OjTvnpMPVJQQJ99BCACYeBjFXJ3w3AAAaACOGh4pu",
 						"type": "text"
 					}
 				],
@@ -424,10 +424,10 @@
 					"raw": "{\r\n  \"documents\": [\r\n    {\r\n      \"language\": \"en\",\r\n      \"id\": \"1\",\r\n      \"text\": \"The Great Pyramid of Giza[a] is the largest Egyptian pyramid and served as the tomb of pharaoh Khufu, who ruled during the Fourth Dynasty of the Old Kingdom. Built in the early 26th century BC, over a period of about 27 years,[3] the pyramid is the oldest of the Seven Wonders of the Ancient World, and the only wonder that has remained largely intact.\"\r\n    }\r\n  ]\r\n}"
 				},
 				"url": {
-					"raw": "https://ai900orlanguage.cognitiveservices.azure.com/text/analytics/v2.1/entities",
+					"raw": "https://ai900orlanguageai.cognitiveservices.azure.com/text/analytics/v2.1/entities",
 					"protocol": "https",
 					"host": [
-						"ai900orlanguage",
+						"ai900orlanguageai",
 						"cognitiveservices",
 						"azure",
 						"com"
@@ -454,7 +454,7 @@
 					},
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "4eadca5dfe534a3eb6d36d2268daa3d0",
+						"value": "SOd1YasHM5hYQZU5aK6yAANw07VT1djHjfAMltkxxS4OjTvnpMPVJQQJ99BCACYeBjFXJ3w3AAAaACOGh4pu",
 						"type": "text"
 					}
 				],
@@ -463,10 +463,10 @@
 					"raw": "{\r\n  \"documents\": [\r\n    {\r\n      \"language\": \"en\",\r\n      \"id\": \"1\",\r\n      \"text\": \"O'Reilly Media (formerly O'Reilly & Associates) is a learning company established by Tim O'Reilly that publishes books, produces tech conferences, and provides an online learning platform.\"\r\n    },\r\n    {\r\n      \"language\": \"fr\",\r\n      \"id\": \"2\",\r\n      \"text\": \"Bonjour tout le monde\"\r\n    }\r\n  ]\r\n}"
 				},
 				"url": {
-					"raw": "https://ai900orlanguage.cognitiveservices.azure.com/text/analytics/v2.1/keyPhrases",
+					"raw": "https://ai900orlanguageai.cognitiveservices.azure.com/text/analytics/v2.1/keyPhrases",
 					"protocol": "https",
 					"host": [
-						"ai900orlanguage",
+						"ai900orlanguageai",
 						"cognitiveservices",
 						"azure",
 						"com"
@@ -493,7 +493,7 @@
 					},
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "4eadca5dfe534a3eb6d36d2268daa3d0",
+						"value": "SOd1YasHM5hYQZU5aK6yAANw07VT1djHjfAMltkxxS4OjTvnpMPVJQQJ99BCACYeBjFXJ3w3AAAaACOGh4pu",
 						"type": "text"
 					}
 				],
@@ -502,10 +502,10 @@
 					"raw": "{\r\n  \"documents\": [\r\n    {\r\n      \"language\": \"en\",\r\n      \"id\": \"1\",\r\n      \"text\": \"I hate cloudy days. They are so gloomy!\"\r\n    },\r\n    {\r\n      \"language\": \"en\",\r\n      \"id\": \"2\",\r\n      \"text\": \"I love Azure AI services!\"\r\n    }\r\n  ]\r\n}"
 				},
 				"url": {
-					"raw": "https://ai900orlanguage.cognitiveservices.azure.com/text/analytics/v2.1/sentiment",
+					"raw": "https://ai900orlanguageai.cognitiveservices.azure.com/text/analytics/v2.1/sentiment",
 					"protocol": "https",
 					"host": [
-						"ai900orlanguage",
+						"ai900orlanguageai",
 						"cognitiveservices",
 						"azure",
 						"com"
@@ -532,21 +532,21 @@
 					},
 					{
 						"key": "Ocp-Apim-Subscription-Region",
-						"value": "canadacentral",
+						"value": "eastus",
 						"type": "text"
 					},
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "a59a895f23324d548981477ea8234ae9",
+						"value": "AYurp5L44PSaI9CCGrZ5gq3cCVSmIvZPUW4JIMGwRE4bHMlQGwQNJQQJ99BCACYeBjFXJ3w3AAAbACOGbHJK",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "[\r\n    {\"Text\":\"I would really like to drive your car around the block a few times.\"}\r\n]"
+					"raw": "[\r\n    {\"Text\":\"J’aimerais vraiment conduire votre voiture autour du pâté de maisons plusieurs fois.\"}\r\n]"
 				},
 				"url": {
-					"raw": "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&from=en&to=fr",
+					"raw": "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&from=fr&to=en",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -564,11 +564,11 @@
 						},
 						{
 							"key": "from",
-							"value": "en"
+							"value": "fr"
 						},
 						{
 							"key": "to",
-							"value": "fr"
+							"value": "en"
 						}
 					]
 				}
